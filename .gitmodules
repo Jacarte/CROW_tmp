@@ -1,0 +1,6 @@
+[submodule "swam"]
+	path = swam
+	url = https://github.com/satabin/swam
+[submodule "souper"]
+	path = souper
+	url = https://github.com/KTH/souper
