@@ -1,0 +1,119 @@
+[
+    [
+        "%0:i32 = var\n%1:i1 = ult %0, 2:i32\n%2:i1 = freeze %1\ninfer %2\n",
+        [
+            "%10:i1 = freeze %2\nresult %10\n",
+            "%19:i1 = eq 1:i1, %2\nresult %19\n",
+            "%6:i1 = ule %0, 1:i32\nresult %6\n",
+            "%20:i1 = select %2, %2, 0:i1\nresult %20\n",
+            "%26:i1 = select %1, 1:i1, %2\nresult %26\n",
+            "%22:i1 = select %2, 1:i1, %2\nresult %22\n",
+            "%3:i1 = and %1, %1\nresult %3\n",
+            "%18:i1 = select %1, %1, %2\nresult %18\n",
+            "%5:i1 = eq 1:i1, %1\nresult %5\n",
+            "%8:i1 = select %1, 1:i1, 0:i1\nresult %8\n",
+            "%14:i1 = or %1, %2\nresult %14\n",
+            "%7:i1 = select %1, %1, 0:i1\nresult %7\n",
+            "%24:i1 = select %2, 1:i1, 0:i1\nresult %24\n",
+            "%21:i1 = select %2, %1, 0:i1\nresult %21\n",
+            "%16:i1 = select %2, %1, %2\nresult %16\n",
+            "%4:i1 = or %1, %1\nresult %4\n",
+            "%25:i1 = select %1, %2, 0:i1\nresult %25\n",
+            "result %2\n",
+            "result %1\n",
+            "%23:i1 = select %2, 1:i1, %1\nresult %23\n",
+            "%13:i1 = or %2, %2\nresult %13\n",
+            "%9:i1 = select %1, 1:i1, %1\nresult %9\n",
+            "%12:i1 = and %1, %2\nresult %12\n",
+            "%11:i1 = and %2, %2\nresult %11\n",
+            "%17:i1 = select %1, %2, %1\nresult %17\n",
+            "%15:i1 = select %2, %2, %1\nresult %15\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ult %0, 2:i32\ninfer %1\n",
+        [
+            "result %1\n",
+            "%2:i1 = freeze %1\nresult %2\n",
+            "%3:i1 = and %1, %1\nresult %3\n",
+            "%9:i1 = select %1, 1:i1, %1\nresult %9\n",
+            "%5:i1 = eq 1:i1, %1\nresult %5\n",
+            "%6:i1 = ule %0, 1:i32\nresult %6\n",
+            "%8:i1 = select %1, 1:i1, 0:i1\nresult %8\n",
+            "%7:i1 = select %1, %1, 0:i1\nresult %7\n",
+            "%4:i1 = or %1, %1\nresult %4\n"
+        ]
+    ],
+    [
+        "%0:i1 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[0,-1))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ult %0, 2:i32\n%2:i1 = freeze %1\n%3:i32 = var\n%4:i1 = ult %3, 2:i32\n%5:i1 = freeze %4\n%6:i1 = or %2, %5\npc %6 0:i1\n%7:i1 = eq 0:i32, %0\ninfer %7\n",
+        [
+            "result 0:i1\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ult %0, 2:i32\n%2:i1 = freeze %1\n%3:i32 = var\n%4:i1 = ult %3, 2:i32\n%5:i1 = freeze %4\n%6:i1 = or %2, %5\ninfer %6\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[0,-1))\n%1:i32 = addnuw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 4294967295:i32, %0 (hasExternalUses)\n%2:i32 = mul %0, %0\n%3:i32 = mul %1, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\n%3:i1 = slt 0:i32, %0 (hasExternalUses)\n%4:i1 = and %2, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (range=[0,-1))\n%2:i32 = addnuw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = mul %0, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 4294967295:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i1 = var\n%1:i1 = freeze %0\ninfer %1\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i1 = var\n%1:i1 = freeze %0\n%2:i1 = var\n%3:i1 = freeze %2\n%4:i1 = or %1, %3\ninfer %4\n",
+        []
+    ]
+]

@@ -1,0 +1,606 @@
+{
+    "variants": [
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-2][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = sle 1:i32, %0\nresult %7\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-7][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-5][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-9][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-4][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = sle 1:i32, %0\nresult %7\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-7]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-9]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-8][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-6][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = select %1, %1, 0:i1\nresult %6\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-5]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-1][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-3][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-8]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "252bc60985d511d817eef4c7c55e9c7b719f09098d9ee855a7d1442ab8197f62",
+            "Gapful_numbers[[0-6]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = select %1, %1, 0:i1\nresult %6\n"
+                ],
+                [
+                    "%0:i64 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\n%2:i64 = mulnsw 10:i64, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i64 = sext %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ]
+    ],
+    "unique": 1,
+    "total": 20
+}

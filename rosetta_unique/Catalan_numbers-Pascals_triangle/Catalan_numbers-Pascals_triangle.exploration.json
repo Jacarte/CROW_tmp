@@ -1,0 +1,26 @@
+[
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[2,16))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[2,16))\n%1:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[2,16))\n%2:i64 = addnw %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[3,17))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[2,16))\n%2:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[2,16))\n%3:i64 = addnw %1, %2\n%4:i64 = mul %0, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[2,16))\n%1:i64 = var\n%2:i64 = mul %0, %1\ninfer %2\n",
+        []
+    ]
+]

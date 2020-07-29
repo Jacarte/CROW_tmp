@@ -1,0 +1,24 @@
+[
+    [
+        "%0:i32 = var\ninfer %0\n",
+        [
+            "%3:i32 = or %0, %0\nresult %3\n",
+            "%2:i32 = and %0, %0\nresult %2\n",
+            "result %0\n",
+            "%1:i32 = freeze %0\nresult %1\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+        [
+            "%8:i1 = select %2, 1:i1, %2\nresult %8\n",
+            "%3:i1 = or %2, %2\nresult %3\n",
+            "%5:i1 = and %2, %2\nresult %5\n",
+            "%4:i1 = freeze %2\nresult %4\n",
+            "%9:i1 = select %2, 1:i1, 0:i1\nresult %9\n",
+            "%6:i1 = eq 1:i1, %2\nresult %6\n",
+            "%7:i1 = select %2, %2, 0:i1\nresult %7\n",
+            "result %2\n"
+        ]
+    ]
+]

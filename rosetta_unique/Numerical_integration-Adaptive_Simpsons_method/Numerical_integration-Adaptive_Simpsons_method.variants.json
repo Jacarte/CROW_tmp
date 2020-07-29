@@ -1,0 +1,246 @@
+{
+    "variants": [
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-15]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%74:i1 = select %0, %0, 1:i1\n%75:i1 = eq %0, %74\nresult %75\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-18]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%100:i2 = uadd.with.overflow %0, 1:i1\n%101:i1 = extractvalue %100, 1:i32\nresult %101\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-23]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-22]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%62:i1 = select %0, 1:i1, %0\nresult %62\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-21]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%60:i1 = select %0, %0, 0:i1\nresult %60\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-59]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-51]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%72:i1 = select %0, 0:i1, %0\n%73:i1 = xor %0, %72\nresult %73\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-54]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%28:i1 = slt %0, %0\n%29:i1 = or %0, %28\nresult %29\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-72]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%64:i1 = select %0, 1:i1, 0:i1\nresult %64\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-65]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%15:i1 = eq %0, %0\n%16:i1 = and %0, %15\nresult %16\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-77]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%4:i2 = sadd.with.overflow %0, %0\n%5:i1 = extractvalue %4, 1:i32\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-70]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%98:i2 = sadd.with.overflow %0, 1:i1\n%99:i1 = extractvalue %98, 1:i32\nresult %99\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-69]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-96]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%19:i1 = sle %0, %0\n%20:i1 = and %0, %19\nresult %20\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-97]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%6:i1 = select %0, 1:i1, %0\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-99]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%26:i1 = ult %0, %0\n%27:i1 = or %0, %26\nresult %27\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-104]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%52:i1 = xor 1:i1, %0\n%53:i1 = xor 1:i1, %52\nresult %53\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-100]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%24:i1 = xor %0, %0\n%25:i1 = or %0, %24\nresult %25\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-103]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-112]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%8:i2 = smul.with.overflow %0, %0\n%9:i1 = extractvalue %8, 1:i32\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-128]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%4:i1 = eq 1:i1, %0\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-135]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%42:i1 = eq 1:i1, %0\nresult %42\n"
+                ]
+            ]
+        ],
+        [
+            "f21d525830ab53a9460376296e9f01ca9ad6d7483fad9c9e74fe420ee4533f05",
+            "Numerical_integration-Adaptive_Simpsons_method[[0-130]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%54:i1 = eq 0:i1, %0\n%55:i1 = xor 1:i1, %54\nresult %55\n"
+                ]
+            ]
+        ]
+    ],
+    "unique": 1,
+    "total": 24
+}

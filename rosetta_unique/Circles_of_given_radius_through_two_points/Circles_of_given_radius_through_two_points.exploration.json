@@ -1,0 +1,26 @@
+[
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,5))\n%1:i32 = mulnw 2:i32, %0 (hasExternalUses)\n%2:i32 = addnw 1:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,5))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 5:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,5))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,5))\n%1:i32 = mulnw 2:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i1 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,5))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ]
+]

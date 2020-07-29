@@ -1,0 +1,70 @@
+[
+    [
+        "%0 = block 2\n%1:i32 = phi %0, 1:i32, 0:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i1 = eq 45:i8, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 32:i32, %0\n%2:i32 = add 4294967287:i32, %0\n%3:i1 = ult %2, 5:i32\n%4:i1 = select %1, 1:i1, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 32:i32, %0\n%2:i32 = add 4294967287:i32, %0\n%3:i1 = ult %2, 5:i32\n%4:i1 = select %1, 1:i1, %3\n%5:i32 = zext %4\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 4294967287:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (nonZero)\n%2:i1 = eq %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 4294967287:i32, %0\n%2:i1 = ult %1, 5:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i32 = phi %0, 0:i32, 1:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0 = block 4\n%1:i32 = var\n%2:i32 = phi %0, 0:i32, %1, 0:i32, 0:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 32:i32, %0\ninfer %1\n",
+        []
+    ]
+]

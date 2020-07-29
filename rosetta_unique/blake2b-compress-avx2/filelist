@@ -1,0 +1,3 @@
+1618242006 55 ./blake2b-compress-avx2.variants.json
+2913138331 36238 ./blake2b-compress-avx2.wasm
+3709004008 2 ./blake2b-compress-avx2.exploration.json

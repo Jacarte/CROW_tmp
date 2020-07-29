@@ -1,0 +1,4846 @@
+{
+    "variants": [
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-1][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%6:i1 = sle 1:i32, %0\nresult %6\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-2][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-3][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%4:i1 = or %1, %1\nresult %4\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%3:i1 = and %1, %1\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-5][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%8:i1 = select %1, 1:i1, %1\nresult %8\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-6][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-7][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = freeze %1\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-8][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%5:i1 = eq 1:i1, %1\nresult %5\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "8d310036d862e4aadd6933669ded2e846d1ec8144c76b7659f6c875c900b3fb2",
+            "Horners_rule_for_polynomial_evaluation[[0-9][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-2][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-3][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-4][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-2][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-3][2-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-4][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-4][2-1][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-2][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1267e85ed8f41ca280780e1f9dd2a9b83a9f8b53923e8e39ab6bf2b152129ca2",
+            "Horners_rule_for_polynomial_evaluation[[0-10][1-3][3-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "%7:i1 = select %1, %1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ]
+    ],
+    "unique": 2,
+    "total": 220
+}

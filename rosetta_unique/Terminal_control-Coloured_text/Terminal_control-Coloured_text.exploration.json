@@ -1,0 +1,38 @@
+[
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\n%1:i1 = eq 48:i32, %0\n%2:i32 = select %1, 100:i32, %0 (hasExternalUses)\n%3:i1 = slt %2, 107:i32\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\n%1:i1 = eq 38:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\n%1:i1 = eq 38:i32, %0\n%2:i32 = select %1, 90:i32, %0\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\n%1:i1 = eq 48:i32, %0\n%2:i32 = select %1, 100:i32, %0\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\n%1:i1 = eq 38:i32, %0\n%2:i32 = select %1, 90:i32, %0 (hasExternalUses)\n%3:i1 = slt %2, 97:i32\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\n%1:i1 = eq 48:i32, %0\n%2:i32 = select %1, 100:i32, %0 (hasExternalUses)\n%3:i32 = addnsw 1:i32, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\n%1:i1 = eq 38:i32, %0\n%2:i32 = select %1, 90:i32, %0 (hasExternalUses)\n%3:i32 = addnsw 1:i32, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\n%1:i1 = eq 48:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483647,-2147483648))\ninfer %0\n",
+        []
+    ]
+]

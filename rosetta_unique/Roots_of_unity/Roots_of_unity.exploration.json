@@ -1,0 +1,66 @@
+[
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%1:i1 = eq 0:i32, %0\npc %1 0:i1\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%3:i32 = shlnsw %0, 2:i32 (hasExternalUses)\n%4:i1 = eq %2, %3\npc %4 0:i1\n%5:i32 = shlnw %0, 1:i32\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%2:i32 = addnsw 4294967295:i32, %1\n%3:i1 = eq %0, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\npc %3 1:i1\n%4:i32 = addnw 1:i32, %0\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\npc %3 1:i1\n%4:i32 = addnw 1:i32, %0 (hasExternalUses)\n%5:i1 = eq 10:i32, %4\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%1:i1 = eq 0:i32, %0\npc %1 0:i1\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%3:i32 = shlnsw %0, 2:i32 (hasExternalUses)\n%4:i1 = eq %2, %3\npc %4 0:i1\n%5:i32 = shlnw %0, 1:i32\n%6:i1 = eq %2, %5\npc %6 0:i1\n%7:i32 = mulnw 3:i32, %2\n%8:i1 = eq %7, %3\ninfer %8\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%1:i1 = eq 0:i32, %0\npc %1 0:i1\n%2:i32 = shlnsw %0, 2:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%1:i32 = mulnw 3:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%1:i1 = eq 0:i32, %0\npc %1 0:i1\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%3:i32 = shlnsw %0, 2:i32 (hasExternalUses)\n%4:i1 = eq %2, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i1 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,9))\n%1:i1 = eq 0:i32, %0\npc %1 0:i1\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,10))\n%3:i32 = shlnsw %0, 2:i32 (hasExternalUses)\n%4:i1 = eq %2, %3\npc %4 0:i1\n%5:i32 = shlnw %0, 1:i32\n%6:i1 = eq %2, %5\ninfer %6\n",
+        []
+    ]
+]

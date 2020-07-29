@@ -1,0 +1,45 @@
+[
+    [
+        "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+        [
+            "%2:i1 = freeze %1\nresult %2\n",
+            "%6:i1 = sle 1:i32, %0\nresult %6\n",
+            "%7:i1 = select %1, %1, 0:i1\nresult %7\n",
+            "%9:i1 = select %1, 1:i1, 0:i1\nresult %9\n",
+            "%5:i1 = eq 1:i1, %1\nresult %5\n",
+            "result %1\n",
+            "%4:i1 = or %1, %1\nresult %4\n",
+            "%3:i1 = and %1, %1\nresult %3\n",
+            "%8:i1 = select %1, 1:i1, %1\nresult %8\n",
+            "%2:i1 = sle 1:i32, %0\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt 0:i32, %0\npc %1 1:i1\n%2:i32 = shlnuw %0, 3:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = shl %0, 3:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = shl %0, 2:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = shl %0, 3:i32\n%2:i32 = mul %0, %1\ninfer %2\n",
+        []
+    ]
+]

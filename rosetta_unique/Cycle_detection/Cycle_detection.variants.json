@@ -1,0 +1,566 @@
+{
+    "variants": [
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[1-2]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%3:i1 = or %2, %2\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1][1-6]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%6:i1 = eq 1:i1, %2\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1][1-5]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%9:i1 = select %2, 1:i1, 0:i1\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[1-4]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%4:i1 = freeze %2\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[1-6]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%6:i1 = eq 1:i1, %2\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[1-7]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%7:i1 = select %2, %2, 0:i1\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1][1-1]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%8:i1 = select %2, 1:i1, %2\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[1-1]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%8:i1 = select %2, 1:i1, %2\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1][1-8]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1][1-3]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%5:i1 = and %2, %2\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1][1-2]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%3:i1 = or %2, %2\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1][1-4]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%4:i1 = freeze %2\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[1-8]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-1][1-7]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%7:i1 = select %2, %2, 0:i1\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2][1-1]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%8:i1 = select %2, 1:i1, %2\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[1-5]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%9:i1 = select %2, 1:i1, 0:i1\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[1-3]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%5:i1 = and %2, %2\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3][1-4]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%4:i1 = freeze %2\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3][1-2]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%3:i1 = or %2, %2\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2][1-7]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%7:i1 = select %2, %2, 0:i1\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-4]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2][1-6]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%6:i1 = eq 1:i1, %2\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2][1-4]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%4:i1 = freeze %2\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2][1-5]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%9:i1 = select %2, 1:i1, 0:i1\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3][1-3]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%5:i1 = and %2, %2\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3][1-8]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3][1-1]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%8:i1 = select %2, 1:i1, %2\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2][1-8]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-4][1-2]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%3:i1 = or %2, %2\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-4][1-3]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%5:i1 = and %2, %2\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2][1-2]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%3:i1 = or %2, %2\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3][1-6]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%6:i1 = eq 1:i1, %2\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3][1-5]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%9:i1 = select %2, 1:i1, 0:i1\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-2][1-3]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%5:i1 = and %2, %2\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-4][1-1]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%8:i1 = select %2, 1:i1, %2\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "2ea975c8a6b2d64ebfa3b65500af1b6c3bff13495e22b69a67999dd8f700eb34",
+            "Cycle_detection[[0-3][1-7]]",
+            [
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "%7:i1 = select %2, %2, 0:i1\nresult %7\n"
+                ]
+            ]
+        ]
+    ],
+    "unique": 1,
+    "total": 40
+}

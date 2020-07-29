@@ -1,0 +1,142 @@
+[
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\n%2:i1 = freeze %1\n%3:i64 = var\n%4:i1 = ne 1:i64, %3\n%5:i1 = freeze %4\n%6:i1 = or %2, %5\npc %6 1:i1\n%7:i1 = ult %0, %3\npc %7 0:i1\n%8:i64 = and %0, %3\ninfer %8\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = lshr %0, 1:i64\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,21))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,21))\n%1:i32 = trunc %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt %0, 64:i32\n%2:i32 = select %1, %0, 64:i32\n%3:i32 = addnsw 4294967295:i32, %2\n%4:i64 = zext %3\n%5:i64 = shl 1:i64, %4\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\n%2:i1 = freeze %1\ninfer %2\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i1 = ult %0, %1 (hasExternalUses)\n%3:i64 = select %2, 0:i64, %1\n%4:i64 = sub %0, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483648,64))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var (range=[0,64))\n%1:i1 = eq 0:i64, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 1:i64, %0\n%2:i1 = freeze %1\ninfer %2\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0:i64 = var (range=[0,64))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483648,64))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\n%2:i1 = freeze %1\n%3:i64 = var\n%4:i1 = ne 1:i64, %3\n%5:i1 = freeze %4\n%6:i1 = or %2, %5\npc %6 1:i1\n%7:i1 = ult %0, %3\npc %7 0:i1\n%8:i64 = and %0, %3\n%9:i1 = eq 0:i64, %8\n%10:i32 = select %9, 48:i32, 49:i32\ninfer %10\n",
+        []
+    ],
+    [
+        "%0:i64 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,21))\n%1:i64 = addnw 1:i64, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=000000000000000000000000001x000x) (nonNegative) (nonZero) (signBits=26) (range=[32,50))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt %0, 64:i32\n%2:i32 = select %1, %0, 64:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i1 = ult %0, %1 (hasExternalUses)\n%3:i64 = select %2, 0:i64, %1\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i64 = var (range=[0,64))\n%1:i64 = addnsw 18446744073709551615:i64, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt %0, 64:i32\n%2:i32 = select %1, %0, 64:i32\n%3:i32 = addnsw 4294967295:i32, %2\n%4:i64 = zext %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,21))\n%1:i64 = addnw 1:i64, %0 (hasExternalUses)\n%2:i1 = eq 21:i64, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\n%2:i1 = freeze %1\n%3:i64 = var\n%4:i1 = ne 1:i64, %3\n%5:i1 = freeze %4\n%6:i1 = or %2, %5\npc %6 1:i1\n%7:i1 = ult %0, %3\ninfer %7\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\n%2:i1 = freeze %1\n%3:i64 = var\n%4:i1 = ne 1:i64, %3\n%5:i1 = freeze %4\n%6:i1 = or %2, %5\ninfer %6\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt %0, 64:i32\n%2:i32 = select %1, %0, 64:i32\n%3:i32 = addnsw 4294967295:i32, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i64 = var (range=[0,64))\n%1:i64 = shl 1:i64, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i1 = ult %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\n%2:i1 = freeze %1\n%3:i64 = var\n%4:i1 = ne 1:i64, %3\n%5:i1 = freeze %4\n%6:i1 = or %2, %5\npc %6 1:i1\n%7:i1 = ult %0, %3\npc %7 0:i1\n%8:i64 = and %0, %3\n%9:i1 = eq 0:i64, %8\ninfer %9\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i64 = var\n%2:i64 = var\n%3:i64 = var\n%4:i1 = ult %2, %3 (hasExternalUses)\n%5:i64 = var (range=[0,64))\n%6:i64 = shl 1:i64, %5\n%7:i64 = select %4, 0:i64, %6\n%8:i64 = or %1, %7 (hasExternalUses)\n%9:i64 = phi %0, 18446744073709551615:i64, %8\ninfer %9\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i1 = ult %0, %1 (hasExternalUses)\n%3:i64 = var (range=[0,64))\n%4:i64 = shl 1:i64, %3\n%5:i64 = select %2, 0:i64, %4\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 1:i64, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = lshr %0, 1:i64 (hasExternalUses)\n%2:i1 = eq 0:i64, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt %0, 64:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = var\n%3:i1 = ult %1, %2 (hasExternalUses)\n%4:i64 = var (range=[0,64))\n%5:i64 = shl 1:i64, %4\n%6:i64 = select %3, 0:i64, %5\n%7:i64 = or %0, %6\ninfer %7\n",
+        []
+    ]
+]

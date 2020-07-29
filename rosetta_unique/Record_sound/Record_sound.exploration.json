@@ -1,0 +1,18 @@
+[
+    [
+        "%0:i32 = var\n%1:i1 = eq 4294967295:i32, %0\ninfer %1\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0 = block 2\n%1:i32 = phi %0, 1:i32, 0:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ]
+]

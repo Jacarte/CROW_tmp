@@ -1,0 +1,26 @@
+[
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (range=[1,0))\n%1:i32 = add 4294967295:i32, %0 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\ninfer %2\n",
+        [
+            "%3:i1 = eq 1:i32, %0\nresult %3\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (range=[1,0))\n%1:i32 = add 4294967295:i32, %0\ninfer %1\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (range=[1,0))\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ]
+]

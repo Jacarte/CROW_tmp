@@ -1,0 +1,114 @@
+[
+    [
+        "%0:i8 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = ult %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (signBits=25) (range=[-128,128))\n%1:i32 = and 4294967263:i32, %0\n%2:i32 = subnsw %1, 65:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\ninfer %1 (demandedBits=11111111111111111111111111011111)\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\n%2:i1 = ne 0:i32, %1\ninfer %2\n",
+        [
+            "%3:i1 = ult 0:i8, %0\nresult %3\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\npc %2 0:i1\n%3:i32 = and 4294967263:i32, %1\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0 (hasExternalUses)\n%2:i1 = ne 0:i32, %1\ninfer %2\n",
+        [
+            "%3:i1 = ult 0:i8, %0\nresult %3\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\n%2:i32 = and 4294967263:i32, %1\n%3:i32 = subnsw %2, 65:i32\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i32 = subnsw %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i32 = addnsw %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\npc %2 0:i1\n%3:i32 = and 4294967263:i32, %1\n%4:i32 = subnsw %3, 65:i32\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,4))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 4:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (signBits=25) (range=[-128,128))\ninfer %0 (demandedBits=11111111111111111111111111011111)\n",
+        []
+    ],
+    [
+        "%0:i1 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,4))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i32 = var\n%2:i32 = phi %0, %1, 0:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\ninfer %2\n",
+        [
+            "%3:i1 = ule %0, 0:i8\nresult %3\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (signBits=25) (range=[-128,128))\n%1:i32 = and 4294967263:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = sle %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,4))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\n%2:i32 = and 4294967263:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (nonZero)\n%2:i1 = ne %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\ninfer %0 (demandedBits=11011111)\n",
+        [
+            "result %0\n"
+        ]
+    ]
+]

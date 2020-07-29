@@ -1,0 +1,44 @@
+[
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 3:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 3:i32, %1\n%3:i32 = select %2, 0:i32, %1\ninfer %3\n",
+        [
+            "%4:i1 = slt %0, 2:i32\n%5:i32 = zext %4\n%6:i32 = shl %5, %0\nresult %6\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0 = block 5\n%1:i1 = phi %0, 0:i1, 0:i1, 0:i1, 1:i1, 0:i1\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i1 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ]
+]

@@ -1,0 +1,686 @@
+{
+    "variants": [
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][6-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][4-1][6-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[4-1][6-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[4-1][6-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][6-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[4-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][6-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][4-1][6-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[6-3]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[6-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[4-1][6-2]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][4-1][6-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[6-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][4-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[0-1][6-4]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "result %3\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[6-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ]
+            ]
+        ],
+        [
+            "3ead8e1f053b2faf761e54681a87cf431d77548f46a3ae54470474cda0b703a8",
+            "Repeat_a_string[[4-1][6-1]]",
+            [
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\n%3:i32 = add 1:i32, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i32 = mul %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ]
+            ]
+        ]
+    ],
+    "unique": 1,
+    "total": 20
+}

@@ -1,0 +1,46 @@
+[
+    [
+        "%0:i32 = var (range=[-2147483648,2147483647))\n%1:i32 = shl %0, 1:i32 (hasExternalUses)\n%2:i32 = var\n%3:i1 = sle %1, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i1 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (range=[-2147483648,2147483647))\n%2:i32 = and %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483648,2147483647))\n%1:i32 = shl %0, 1:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ne 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483648,2147483647))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\n%3:i32 = zext %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = sle 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (range=[-2147483648,2147483647))\n%2:i32 = and %0, %1\n%3:i1 = ne 0:i32, %2\ninfer %3\n",
+        []
+    ]
+]

@@ -1,0 +1,46 @@
+[
+    [
+        "%0:i32 = var\n%1:i1 = slt 255:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i1 = ne 43:i8, %0\npc %1 1:i1\n%2:i1 = ne 45:i8, %0\npc %2 1:i1\n%3:i1 = ne 42:i8, %0\npc %3 1:i1\n%4:i1 = ne 47:i8, %0\npc %4 1:i1\n%5:i1 = ne 94:i8, %0\npc %5 1:i1\n%6:i32 = sext %0\ninfer %6\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt 255:i32, %0\npc %1 0:i1\n%2:i32 = addnsw 1:i32, %0\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = ult %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\npc %1 0:i1\n%2:i32 = addnsw 4294967295:i32, %0\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ]
+]

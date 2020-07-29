@@ -1,0 +1,20 @@
+[
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,1001))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 1001:i32, %1\ninfer %2\n",
+        [
+            "%3:i1 = sle 1000:i32, %0\nresult %3\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,1001))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        [
+            "%2:i32 = sub %0, 4294967295:i32\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,1001))\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ]
+]

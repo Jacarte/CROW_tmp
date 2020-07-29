@@ -1,0 +1,57 @@
+[
+    [
+        "%0:i32 = var\n%1:i32 = add 1:i32, %0\ninfer %1\n",
+        [
+            "%2:i32 = sub %0, 4294967295:i32\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+        [
+            "%2:i1 = ule %0, 0:i8\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i8 = var (range=[1,0))\n%1:i32 = sext %0\ninfer %1\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0 = block 2\n%1:i32 = var\n%2:i32 = phi %0, 0:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var (range=[1,0))\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        [
+            "%1:i32 = freeze %0\nresult %1\n",
+            "result %0\n",
+            "%2:i32 = and %0, %0\nresult %2\n",
+            "%3:i32 = or %0, %0\nresult %3\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+        [
+            "%2:i32 = add 1:i32, %0\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        [
+            "result %1\n"
+        ]
+    ]
+]

@@ -1,0 +1,1126 @@
+{
+    "variants": [
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-8]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%4:i32 = or %1, %1\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%8:i32 = select %0, 43:i32, %1\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-3]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%2:i32 = freeze %1\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-4]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%10:i32 = srem %1, 819270443:i32\nresult %10\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-3]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-9]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%5:i32 = and 47:i32, %1\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%9:i32 = urem %1, 1073741868:i32\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%9:i32 = urem %1, 1073741868:i32\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%8:i32 = select %0, 43:i32, %1\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%3:i32 = and %1, %1\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-4]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%10:i32 = srem %1, 819270443:i32\nresult %10\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-8]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%4:i32 = or %1, %1\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%7:i32 = select %0, %1, 45:i32\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%7:i32 = select %0, %1, 45:i32\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-10]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%6:i32 = or 1:i32, %1\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%2:i32 = freeze %1\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[1-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%3:i32 = and %1, %1\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-8]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%4:i32 = or %1, %1\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%8:i32 = select %0, 43:i32, %1\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%2:i32 = freeze %1\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%7:i32 = select %0, %1, 45:i32\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-4]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%10:i32 = srem %1, 819270443:i32\nresult %10\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%2:i32 = freeze %1\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-10]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%6:i32 = or 1:i32, %1\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%3:i32 = and %1, %1\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-9]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%5:i32 = and 47:i32, %1\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%7:i32 = select %0, %1, 45:i32\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-3]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-1][1-10]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%5:i1 = select %0, %0, 0:i1\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%6:i32 = or 1:i32, %1\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-3]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-9]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%5:i32 = and 47:i32, %1\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%3:i32 = and %1, %1\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-4]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%10:i32 = srem %1, 819270443:i32\nresult %10\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%8:i32 = select %0, 43:i32, %1\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-2][1-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%9:i32 = urem %1, 1073741868:i32\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-3]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-8]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%4:i32 = or %1, %1\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%3:i32 = and %1, %1\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-8]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%4:i32 = or %1, %1\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%8:i32 = select %0, 43:i32, %1\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%9:i32 = urem %1, 1073741868:i32\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-9]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%5:i32 = and 47:i32, %1\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-3]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-4]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%10:i32 = srem %1, 819270443:i32\nresult %10\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%8:i32 = select %0, 43:i32, %1\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%2:i32 = freeze %1\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%3:i32 = and %1, %1\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-10]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%6:i32 = or 1:i32, %1\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-4]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%10:i32 = srem %1, 819270443:i32\nresult %10\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-10]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%6:i32 = or 1:i32, %1\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%7:i32 = select %0, %1, 45:i32\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-3][1-9]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%5:i32 = and 47:i32, %1\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-4][1-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%7:i1 = select %0, 1:i1, 0:i1\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%9:i32 = urem %1, 1073741868:i32\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-8]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%4:i32 = or %1, %1\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-9]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%5:i32 = and 47:i32, %1\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%2:i32 = freeze %1\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%7:i32 = select %0, %1, 45:i32\nresult %7\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%9:i32 = urem %1, 1073741868:i32\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-4]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%10:i32 = srem %1, 819270443:i32\nresult %10\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-7][1-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%4:i1 = eq 1:i1, %0\nresult %4\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%3:i32 = and %1, %1\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-9]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%5:i32 = and 47:i32, %1\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-10]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%6:i32 = or 1:i32, %1\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-7][1-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%4:i1 = eq 1:i1, %0\nresult %4\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%8:i32 = select %0, 43:i32, %1\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-2]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%3:i32 = and %1, %1\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-8]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%4:i32 = or %1, %1\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%9:i32 = urem %1, 1073741868:i32\nresult %9\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%2:i32 = freeze %1\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-10]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%6:i32 = or 1:i32, %1\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%4:i1 = eq 1:i1, %0\nresult %4\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-1]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%8:i32 = select %0, 43:i32, %1\nresult %8\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-6][1-3]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "result %1\n"
+                ]
+            ]
+        ],
+        [
+            "a864d2e23adeaa6308777644c8a87fce0e77562da0bb414cfde91b1eec9f6362",
+            "Vector[[0-5][1-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = select %0, 43:i32, 45:i32\ninfer %1\n",
+                    "%7:i32 = select %0, %1, 45:i32\nresult %7\n"
+                ]
+            ]
+        ]
+    ],
+    "unique": 1,
+    "total": 80
+}

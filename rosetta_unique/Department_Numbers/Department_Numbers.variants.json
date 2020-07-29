@@ -1,0 +1,1726 @@
+{
+    "variants": [
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[2-1][6-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[4-1][6-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "result %7\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[2-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "c49b032314382db9383b123dbce8e7f03e8867fe656e3636da48dec51d070726",
+            "Department_Numbers[[4-1][5-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "result %7\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[6-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "c49b032314382db9383b123dbce8e7f03e8867fe656e3636da48dec51d070726",
+            "Department_Numbers[[5-1][6-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[2-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "c49b032314382db9383b123dbce8e7f03e8867fe656e3636da48dec51d070726",
+            "Department_Numbers[[4-1][5-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "result %7\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "c49b032314382db9383b123dbce8e7f03e8867fe656e3636da48dec51d070726",
+            "Department_Numbers[[5-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "5cf6e656295ae1896c1aa7327c03be08858cbf0c2b947f49dd2e5791ebbed638",
+            "Department_Numbers[[6-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "c49b032314382db9383b123dbce8e7f03e8867fe656e3636da48dec51d070726",
+            "Department_Numbers[[4-1][5-1][6-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "result %7\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "c49b032314382db9383b123dbce8e7f03e8867fe656e3636da48dec51d070726",
+            "Department_Numbers[[5-1][6-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "355db6f5b277df69383b0a7c9bbd0b08b32ca052e8652f3d1cd5b91f159008a2",
+            "Department_Numbers[[19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[4-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "result %7\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[4-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "result %7\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[4-1][6-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "result %7\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ],
+        [
+            "d2e3f89be7346eb05b74a1867000c1c1fd2e3fe5e5792a593109ad20ec7abd2c",
+            "Department_Numbers[]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "c49b032314382db9383b123dbce8e7f03e8867fe656e3636da48dec51d070726",
+            "Department_Numbers[[5-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "c49b032314382db9383b123dbce8e7f03e8867fe656e3636da48dec51d070726",
+            "Department_Numbers[[4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "result %7\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "734d337c99fcbe48e4c21d3ef01d6d7f8d90e811a871deb59c71be3a6a27621d",
+            "Department_Numbers[[2-1][6-1][19-1]]",
+            [
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\ninfer %7\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = addnw 2:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\ninfer %8\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\n%6:i1 = freeze %5\ninfer %6\n",
+                    "result %5\n"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\n%14:i32 = addnw %0, %1\n%15:i32 = addnw %4, %14\n%16:i1 = eq 12:i32, %15\n%17:i1 = freeze %16\n%18:i1 = and %13, %17\ninfer %18\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i1 = ult %0, 5:i32\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i32 = addnw %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\ninfer %11\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 8:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\ninfer %12\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%2:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%3:i32 = addnw %1, %2\n%4:i32 = addnw %0, %3\n%5:i1 = eq 12:i32, %4\ninfer %5\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0) (nonNegative) (nonZero) (range=[2,7))\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,8))\n%5:i1 = eq %1, %4\n%6:i1 = freeze %5\n%7:i1 = or %3, %6\n%8:i1 = freeze %7\n%9:i1 = eq %0, %4\n%10:i1 = freeze %9\n%11:i1 = or %8, %10\n%12:i1 = xor 1:i1, %11\n%13:i1 = freeze %12\ninfer %13\n",
+                    "result %12\n"
+                ]
+            ]
+        ]
+    ],
+    "unique": 5,
+    "total": 20
+}

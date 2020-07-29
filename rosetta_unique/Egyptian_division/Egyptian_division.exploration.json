@@ -1,0 +1,108 @@
+[
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%1:i32 = trunc %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\ninfer %0\n",
+        [
+            "result %0\n",
+            "%2:i64 = and %0, %0\nresult %2\n",
+            "%6:i64 = urem %0, 9223372032559808512:i64\nresult %6\n",
+            "%5:i64 = srem %0, 11529215046068469763:i64\nresult %5\n",
+            "%1:i64 = freeze %0\nresult %1\n",
+            "%4:i64 = and 63:i64, %0\nresult %4\n",
+            "%3:i64 = or %0, %0\nresult %3\n"
+        ]
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%1:i32 = trunc %0\n%2:i32 = shl 1:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%2:i64 = shl %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = var\n%3:i64 = add %1, %2 (hasExternalUses)\n%4:i1 = ult %0, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i64 = var\n%2:i64 = phi %0, 0:i64, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%3:i64 = shl %1, %2 (hasExternalUses)\n%4:i1 = ult %0, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%2:i32 = trunc %1\n%3:i32 = phi %0, %2, 64:i32\n%4:i1 = slt 0:i32, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = var\n%3:i64 = var\n%4:i64 = mul %2, %3\n%5:i64 = add %1, %4\n%6:i1 = eq %0, %5\ninfer %6\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = mul %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483646,-2147483648))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = add %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1 = block 2\n%2:i64 = var\n%3:i64 = phi %1, 0:i64, %2\n%4:i64 = sub %0, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483646,-2147483648))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483646,-2147483648))\n%1:i1 = slt 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%3:i64 = shl %1, %2 (hasExternalUses)\n%4:i1 = ult %0, %3\npc %4 0:i1\n%5:i64 = addnw 1:i64, %2 (hasExternalUses)\n%6:i1 = eq 64:i64, %5\ninfer %6\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%2:i32 = trunc %1\n%3:i32 = phi %0, %2, 64:i32\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%3:i64 = shl %1, %2 (hasExternalUses)\n%4:i1 = ult %0, %3\npc %4 0:i1\n%5:i64 = addnw 1:i64, %2\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = var\n%2:i64 = var\n%3:i64 = mul %1, %2\n%4:i64 = add %0, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i64 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,64))\n%1:i32 = trunc %0\n%2:i32 = shl 1:i32, %1\n%3:i64 = sext %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i64 = var\ninfer %0\n",
+        []
+    ]
+]

@@ -1,0 +1,44 @@
+[
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        [
+            "%2:i32 = add 1:i32, %0\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+        [
+            "result %2\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+        [
+            "%2:i1 = ule %0, 0:i8\nresult %2\n"
+        ]
+    ]
+]

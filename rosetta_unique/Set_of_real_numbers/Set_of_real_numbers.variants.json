@@ -1,0 +1,2868 @@
+{
+    "variants": [
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-5]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%4:i2 = sadd.with.overflow %0, %0\n%5:i1 = extractvalue %4, 1:i32\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-11]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%54:i1 = eq 0:i1, %0\n%55:i1 = xor 1:i1, %54\nresult %55\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%98:i2 = sadd.with.overflow %0, 1:i1\n%99:i1 = extractvalue %98, 1:i32\nresult %99\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-16]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%64:i1 = select %0, 1:i1, 0:i1\nresult %64\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-23]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%72:i1 = select %0, 0:i1, %0\n%73:i1 = xor %0, %72\nresult %73\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-26]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%28:i1 = slt %0, %0\n%29:i1 = or %0, %28\nresult %29\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-55]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%19:i1 = sle %0, %0\n%20:i1 = and %0, %19\nresult %20\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-48]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-41]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%76:i1 = select %0, %0, 1:i1\n%77:i1 = eq %0, %76\nresult %77\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-43]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-52]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%26:i1 = ult %0, %0\n%27:i1 = or %0, %26\nresult %27\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-42]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%8:i2 = smul.with.overflow %0, %0\n%9:i1 = extractvalue %8, 1:i32\nresult %9\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-40]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%100:i2 = uadd.with.overflow %0, 1:i1\n%101:i1 = extractvalue %100, 1:i32\nresult %101\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-75]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%52:i1 = xor 1:i1, %0\n%53:i1 = xor 1:i1, %52\nresult %53\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-66]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%62:i1 = select %0, 1:i1, %0\nresult %62\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-79]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-83]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%42:i1 = eq 1:i1, %0\nresult %42\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-80]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%74:i1 = select %0, 0:i1, 1:i1\n%75:i1 = xor 1:i1, %74\nresult %75\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-96]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%76:i1 = select %0, 0:i1, 1:i1\n%77:i1 = xor 1:i1, %76\nresult %77\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-112]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%24:i1 = xor %0, %0\n%25:i1 = or %0, %24\nresult %25\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-109]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%15:i1 = eq %0, %0\n%16:i1 = and %0, %15\nresult %16\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-100]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%17:i1 = ule %0, %0\n%18:i1 = and %0, %17\nresult %18\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-115]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%6:i2 = uadd.with.overflow %0, %0\n%7:i1 = extractvalue %6, 1:i32\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-116]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%60:i1 = select %0, %0, 0:i1\nresult %60\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-130]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-141]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%74:i1 = select %0, %0, 1:i1\n%75:i1 = eq %0, %74\nresult %75\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-6]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%4:i2 = sadd.with.overflow %0, %0\n%5:i1 = extractvalue %4, 1:i32\nresult %5\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-12]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%54:i1 = eq 0:i1, %0\n%55:i1 = xor 1:i1, %54\nresult %55\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-7]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%98:i2 = sadd.with.overflow %0, 1:i1\n%99:i1 = extractvalue %98, 1:i32\nresult %99\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-17]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%64:i1 = select %0, 1:i1, 0:i1\nresult %64\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-41]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%100:i2 = uadd.with.overflow %0, 1:i1\n%101:i1 = extractvalue %100, 1:i32\nresult %101\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-24]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%72:i1 = select %0, 0:i1, %0\n%73:i1 = xor %0, %72\nresult %73\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-42]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%76:i1 = select %0, %0, 1:i1\n%77:i1 = eq %0, %76\nresult %77\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-27]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%28:i1 = slt %0, %0\n%29:i1 = or %0, %28\nresult %29\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-49]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%1:i1 = freeze %0\nresult %1\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-53]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%26:i1 = ult %0, %0\n%27:i1 = or %0, %26\nresult %27\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-43]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%8:i2 = smul.with.overflow %0, %0\n%9:i1 = extractvalue %8, 1:i32\nresult %9\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-44]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%2:i1 = and %0, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-56]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%19:i1 = sle %0, %0\n%20:i1 = and %0, %19\nresult %20\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-76]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%52:i1 = xor 1:i1, %0\n%53:i1 = xor 1:i1, %52\nresult %53\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-80]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-81]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%74:i1 = select %0, 0:i1, 1:i1\n%75:i1 = xor 1:i1, %74\nresult %75\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-67]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%62:i1 = select %0, 1:i1, %0\nresult %62\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-101]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%17:i1 = ule %0, %0\n%18:i1 = and %0, %17\nresult %18\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-97]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%76:i1 = select %0, 0:i1, 1:i1\n%77:i1 = xor 1:i1, %76\nresult %77\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-84]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%42:i1 = eq 1:i1, %0\nresult %42\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-116]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%6:i2 = uadd.with.overflow %0, %0\n%7:i1 = extractvalue %6, 1:i32\nresult %7\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-117]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%60:i1 = select %0, %0, 0:i1\nresult %60\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-113]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%24:i1 = xor %0, %0\n%25:i1 = or %0, %24\nresult %25\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-110]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%15:i1 = eq %0, %0\n%16:i1 = and %0, %15\nresult %16\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-131]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%3:i1 = or %0, %0\nresult %3\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "4a1a76bca4df1be898dfb7516e11237c55b182c6cb6f5bcbe3c698e67202f005",
+            "Set_of_real_numbers[[0-141]]",
+            [
+                [
+                    "%0:i1 = var\ninfer %0\n",
+                    "%74:i1 = select %0, %0, 1:i1\n%75:i1 = eq %0, %74\nresult %75\n"
+                ],
+                [
+                    "%0:i1 = var\n%1:i32 = zext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = phi %0, 0:i1, %2\ninfer %3\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 3:i32, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 1:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = phi %0, 0:i1, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0 = block 2\n%1:i1 = var\n%2:i1 = xor 1:i1, %1\n%3:i1 = var\n%4:i1 = phi %0, %2, %3\ninfer %4\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i1 = var\n%1:i1 = xor 1:i1, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,3))\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ]
+    ],
+    "unique": 1,
+    "total": 53
+}

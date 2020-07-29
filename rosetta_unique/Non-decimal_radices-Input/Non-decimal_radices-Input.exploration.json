@@ -1,0 +1,11 @@
+[
+    [
+        "%0:i32 = var\ninfer %0\n",
+        [
+            "result %0\n",
+            "%1:i32 = freeze %0\nresult %1\n",
+            "%3:i32 = or %0, %0\nresult %3\n",
+            "%2:i32 = and %0, %0\nresult %2\n"
+        ]
+    ]
+]

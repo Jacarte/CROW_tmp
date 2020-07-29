@@ -1,0 +1,35 @@
+[
+    [
+        "%0:i32 = var\n%1:i1 = ne 0:i32, %0\npc %1 1:i1\n%2:i1 = ne 1:i32, %0\npc %2 1:i1\n%3:i32 = var\n%4:i1 = ult %0, %3\npc %4 1:i1\n%5:i32 = lshr %3, 1:i32\n%6:i1 = ult %5, %0\ninfer %6\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ne 0:i32, %0\npc %1 1:i1\n%2:i1 = ne 1:i32, %0\npc %2 1:i1\n%3:i32 = var\n%4:i1 = ult %0, %3\npc %4 1:i1\n%5:i32 = sub %3, %0\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ne 0:i32, %0\npc %1 1:i1\n%2:i1 = ne 1:i32, %0\npc %2 1:i1\n%3:i32 = var\n%4:i1 = ult %0, %3\npc %4 0:i1\n%5:i1 = eq %3, %0\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ne 0:i32, %0\npc %1 1:i1\n%2:i1 = ne 1:i32, %0\npc %2 1:i1\n%3:i32 = var\n%4:i1 = ult %0, %3\npc %4 0:i1\n%5:i1 = eq %3, %0\n%6:i32 = zext %5\ninfer %6\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ne 0:i32, %0\npc %1 1:i1\n%2:i1 = ne 1:i32, %0\npc %2 1:i1\n%3:i32 = var\n%4:i1 = ult %0, %3\ninfer %4\n",
+        [
+            "%10:i1 = select %4, 1:i1, %4\nresult %10\n",
+            "%8:i1 = eq 1:i1, %4\nresult %8\n",
+            "%5:i1 = freeze %4\nresult %5\n",
+            "%6:i1 = and %4, %4\nresult %6\n",
+            "result %4\n",
+            "%9:i1 = select %4, %4, 0:i1\nresult %9\n",
+            "%7:i1 = or %4, %4\nresult %7\n",
+            "%11:i1 = select %4, 1:i1, 0:i1\nresult %11\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ne 0:i32, %0\npc %1 1:i1\n%2:i1 = ne 1:i32, %0\npc %2 1:i1\n%3:i32 = var\n%4:i1 = ult %0, %3\npc %4 1:i1\n%5:i32 = lshr %3, 1:i32\ninfer %5\n",
+        []
+    ]
+]

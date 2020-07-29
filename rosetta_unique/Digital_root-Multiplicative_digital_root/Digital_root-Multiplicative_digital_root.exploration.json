@@ -1,0 +1,22 @@
+[
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\n%2:i32 = select %1, 1:i32, 0:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i1 = ne 0:i64, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = freeze %0\ninfer %1\n",
+        []
+    ]
+]

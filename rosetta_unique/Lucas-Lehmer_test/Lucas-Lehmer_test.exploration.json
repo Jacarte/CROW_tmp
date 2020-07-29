@@ -1,0 +1,39 @@
+[
+    [
+        "%0:i32 = var\n%1:i1 = eq 2:i32, %0\ninfer %1\n",
+        [
+            "%5:i1 = eq 1:i1, %1\nresult %5\n",
+            "%4:i1 = or %1, %1\nresult %4\n",
+            "%3:i1 = and %1, %1\nresult %3\n",
+            "result %1\n",
+            "%2:i1 = freeze %1\nresult %2\n",
+            "%8:i1 = select %1, 1:i1, 0:i1\nresult %8\n",
+            "%6:i1 = select %1, %1, 0:i1\nresult %6\n",
+            "%7:i1 = select %1, 1:i1, %1\nresult %7\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 2:i32, %0\npc %1 0:i1\n%2:i1 = sle %0, 1:i32\npc %2 0:i1\n%3:i32 = srem %0, 2:i32\n%4:i1 = eq 0:i32, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 2:i32, %0\npc %1 0:i1\n%2:i1 = sle %0, 1:i32\npc %2 0:i1\n%3:i32 = srem %0, 2:i32\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 2:i32, %0\npc %1 0:i1\n%2:i1 = sle %0, 1:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[3,-2147483648))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = sle 3:i32, %0\ninfer %1\n",
+        []
+    ]
+]

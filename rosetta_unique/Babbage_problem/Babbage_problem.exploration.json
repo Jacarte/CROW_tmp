@@ -1,0 +1,42 @@
+[
+    [
+        "%0:i1 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = mulnsw %0, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = mulnsw %0, %0 (hasExternalUses)\n%2:i32 = srem %1, 1000000:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = mulnsw %0, %0 (hasExternalUses)\n%2:i32 = srem %1, 1000000:i32\n%3:i1 = ne 269696:i32, %2\npc %3 1:i1\n%4:i1 = slt %1, 2147483647:i32\ninfer %4\n",
+        [
+            "result 1:i1\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        [
+            "%2:i32 = sub %0, 4294967295:i32\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = mulnsw %0, %0 (hasExternalUses)\n%2:i32 = srem %1, 1000000:i32\n%3:i1 = ne 269696:i32, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,-2147483648))\n%1:i32 = mulnsw %0, %0 (hasExternalUses)\n%2:i1 = slt 2147483647:i32, %1\ninfer %2\n",
+        [
+            "result 0:i1\n"
+        ]
+    ]
+]

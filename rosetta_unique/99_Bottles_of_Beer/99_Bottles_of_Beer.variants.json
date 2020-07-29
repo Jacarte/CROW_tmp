@@ -1,0 +1,366 @@
+{
+    "variants": [
+        [
+            "6eee80bd67ec9d7076157cafb33fc37549fc8cad55678e435f0e94de1e23a5da",
+            "99_Bottles_of_Beer[[0-1][2-3]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 4:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%6:i32 = srem %0, 1889533952:i32\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[2-7]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%4:i32 = and 127:i32, %0\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[1-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[2-5]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%5:i32 = urem %0, 1073741827:i32\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "6eee80bd67ec9d7076157cafb33fc37549fc8cad55678e435f0e94de1e23a5da",
+            "99_Bottles_of_Beer[[0-1][2-1]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 4:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[2-2]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[1-1]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "6eee80bd67ec9d7076157cafb33fc37549fc8cad55678e435f0e94de1e23a5da",
+            "99_Bottles_of_Beer[[0-1][2-2]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 4:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[2-6]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "result %0\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[1-1][2-2]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%2:i32 = and %0, %0\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[2-3]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%6:i32 = srem %0, 1889533952:i32\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[2-4]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[1-1][2-4]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%1:i32 = freeze %0\nresult %1\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[2-1]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%3:i32 = or %0, %0\nresult %3\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[1-1][2-7]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%4:i32 = and 127:i32, %0\nresult %4\n"
+                ]
+            ]
+        ],
+        [
+            "6eee80bd67ec9d7076157cafb33fc37549fc8cad55678e435f0e94de1e23a5da",
+            "99_Bottles_of_Beer[[0-1]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "%2:i1 = sle 4:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[1-1][2-5]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%5:i32 = urem %0, 1073741827:i32\nresult %5\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[1-1][2-3]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "%6:i32 = srem %0, 1889533952:i32\nresult %6\n"
+                ]
+            ]
+        ],
+        [
+            "c69ebe2c505b49d995878cc4e19f134dcf6e167fc7f9673ceee739ad1f19ece8",
+            "99_Bottles_of_Beer[[1-1][2-6]]",
+            [
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i1 = ult 3:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+                    "%2:i32 = sub %0, 1:i32\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var (range=[3,100))\ninfer %0\n",
+                    "result %0\n"
+                ]
+            ]
+        ]
+    ],
+    "unique": 2,
+    "total": 20
+}

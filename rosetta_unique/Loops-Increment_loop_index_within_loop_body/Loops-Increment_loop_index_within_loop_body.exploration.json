@@ -1,0 +1,18 @@
+[
+    [
+        "%0:i64 = var\n%1:i64 = and 1:i64, %0\n%2:i1 = eq 0:i64, %1\npc %2 1:i1\n%3:i1 = eq 2:i64, %0\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = and 1:i64, %0\n%2:i1 = eq 0:i64, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = and 1:i64, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i64 = var\n%1:i64 = and 1:i64, %0\n%2:i1 = eq 0:i64, %1\npc %2 0:i1\n%3:i64 = srem %0, 3:i64\ninfer %3\n",
+        []
+    ]
+]

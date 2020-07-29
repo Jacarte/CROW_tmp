@@ -1,0 +1,38 @@
+[
+    [
+        "%0:i8 = var\n%1:i8 = var\n%2:i8 = or %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i8 = var\n%2:i8 = and 1:i8, %1\n%3:i8 = xor 1:i8, %2\n%4:i8 = and %0, %3\n%5:i8 = and 1:i8, %0\n%6:i8 = xor 1:i8, %5\n%7:i8 = and %1, %6\n%8:i8 = or %4, %7\ninfer %8\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i8 = and 1:i8, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var\ninfer %0 (demandedBits=00000001)\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i8 = and 1:i8, %0\n%2:i8 = xor 1:i8, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i8 = var\n%2:i8 = and %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i8 = var\n%2:i8 = and 1:i8, %1\n%3:i8 = xor 1:i8, %2\n%4:i8 = and %0, %3\ninfer %4\n",
+        []
+    ]
+]

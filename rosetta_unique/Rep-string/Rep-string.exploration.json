@@ -1,0 +1,50 @@
+[
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,10))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,10))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483646,-2147483648))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = lshr %0, 1:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483646,-2147483648))\n%1:i32 = addnsw 4294967295:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = lshr %0, 1:i32 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[-2147483646,-2147483648))\n%1:i32 = addnsw 4294967295:i32, %0 (hasExternalUses)\n%2:i1 = eq 0:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,10))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 10:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0 (demandedBits=11111111111111111111111111111110)\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0 = block 4\n%1:i32 = var (range=[-2147483646,-2147483648))\n%2:i32 = phi %0, 0:i32, 0:i32, %1, 0:i32\ninfer %2\n",
+        []
+    ]
+]

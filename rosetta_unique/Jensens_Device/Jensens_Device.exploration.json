@@ -1,0 +1,20 @@
+[
+    [
+        "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+        [
+            "%2:i32 = add 1:i32, %0\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+        [
+            "result %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ]
+]

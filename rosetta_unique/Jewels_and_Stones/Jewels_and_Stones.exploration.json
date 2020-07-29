@@ -1,0 +1,40 @@
+[
+    [
+        "%0:i8 = var\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\n%1:i1 = ne 0:i8, %0\ninfer %1\n",
+        [
+            "%2:i1 = ult 0:i8, %0\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = addnsw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ne 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i32 = var\n%2:i32 = phi %0, %1, 0:i32\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var (range=[1,0))\ninfer %0\n",
+        [
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i8 = var (range=[1,0))\n%1:i32 = sext %0\ninfer %1\n",
+        []
+    ]
+]

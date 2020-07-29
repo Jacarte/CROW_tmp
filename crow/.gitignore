@@ -1,0 +1,13 @@
+*debug.txt
+*.slumps
+
+source.sh
+external_C_sources.txt
+crawl
+results
+.coverage*
+meta.json
+dump.rdb
+private.ini
+
+build

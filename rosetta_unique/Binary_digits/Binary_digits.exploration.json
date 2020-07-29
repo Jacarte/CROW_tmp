@@ -1,0 +1,76 @@
+[
+    [
+        "%0:i32 = var (range=[0,-1))\n%1:i32 = addnuw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,20))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,20))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = ne 20:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 1:i32, %0\n%2:i32 = mul 1:i32, %1\ninfer %2\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = and 1:i32, %0\n%2:i1 = ne 0:i32, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = ult 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[0,-1))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = and 1:i32, %0\n%2:i1 = ne 0:i32, %1\n%3:i32 = select %2, 49:i32, 48:i32\n%4:i8 = trunc %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (range=[0,-1))\n%2:i32 = sub %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,20))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = and 1:i32, %0\n%2:i1 = ne 0:i32, %1\n%3:i32 = select %2, 49:i32, 48:i32\ninfer %3 (demandedBits=00000000000000000000000011111111)\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = lshr %0, 1:i32\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = and 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (range=[0,-1))\n%2:i32 = addnuw 1:i32, %1 (hasExternalUses)\n%3:i1 = ne %0, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (range=[0,-1))\n%2:i32 = sub %0, %1\n%3:i32 = sub %2, 1:i32\ninfer %3\n",
+        []
+    ]
+]

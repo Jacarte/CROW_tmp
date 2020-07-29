@@ -1,0 +1,42 @@
+[
+    [
+        "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = zext %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[0,-1))\n%1:i32 = addnuw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var (range=[0,-1))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (range=[0,-1))\n%2:i32 = addnuw 1:i32, %1 (hasExternalUses)\n%3:i1 = eq %0, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0 = block 2\n%1:i8 = var\n%2:i1 = eq 0:i8, %1\n%3:i1 = phi %0, %2, 1:i1\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=000000000000000000000000xxxxxxxx) (nonNegative) (signBits=24) (range=[0,256))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i1 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var\ninfer %0\n",
+        []
+    ]
+]

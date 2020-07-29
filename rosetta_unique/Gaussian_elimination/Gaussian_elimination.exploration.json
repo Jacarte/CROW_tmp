@@ -1,0 +1,16 @@
+[
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\npc %2 0:i1\n%3:i32 = var\n%4:i1 = slt 0:i32, %3\npc %4 1:i1\n%5:i32 = mulnsw %0, %3\ninfer %5\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+        [
+            "result %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i1 = slt 0:i32, %0\ninfer %1\n",
+        []
+    ]
+]

@@ -1,0 +1,4086 @@
+{
+    "variants": [
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[3-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[3-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[3-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[3-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[3-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[3-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[3-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[3-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][3-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][3-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][3-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][3-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][3-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][3-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][3-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[2-1][3-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][3-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][3-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][3-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][3-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][3-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][3-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][3-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][3-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][3-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][3-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][3-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][3-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][3-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][3-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][3-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][3-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][3-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][3-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[1-1][2-1][3-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][3-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][3-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][3-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][3-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][3-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][3-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][3-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][3-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][3-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][3-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][3-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][2-1][3-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][2-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][2-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][2-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][3-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][3-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][2-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][2-1][4-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][3-1][4-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][2-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][3-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][2-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][2-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "%2:i32 = add 1:i32, %0\nresult %2\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][3-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][3-1][4-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][4-1][5-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "result %2\n"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][3-1][5-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "No replace"
+                ]
+            ]
+        ],
+        [
+            "1fe1285f82c5b560434695c8c5d26641db6858b45fd5fa2f245b10bc3caffe72",
+            "Multisplit[[0-1][1-1][3-1][6-1]]",
+            [
+                [
+                    "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\ninfer %0\n",
+                    "result %0\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i32 = var\n%1:i1 = eq 0:i32, %0\ninfer %1\n",
+                    "result %1\n"
+                ],
+                [
+                    "%0:i32 = var\n%1:i32 = var\n%2:i1 = slt %0, %1\ninfer %2\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\ninfer %0\n",
+                    "No replace"
+                ],
+                [
+                    "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+                    "%2:i1 = ule %0, 0:i8\nresult %2\n"
+                ]
+            ]
+        ]
+    ],
+    "unique": 1,
+    "total": 120
+}

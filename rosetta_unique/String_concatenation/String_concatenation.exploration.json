@@ -1,0 +1,23 @@
+[
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i32 = add 1:i32, %1\n%3:i32 = add %0, %2\ninfer %3\n",
+        [
+            "%4:i32 = xor 4294967295:i32, %1\n%5:i32 = sub %0, %4\nresult %5\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        [
+            "%3:i32 = or %0, %0\nresult %3\n",
+            "result %0\n",
+            "%1:i32 = freeze %0\nresult %1\n",
+            "%2:i32 = and %0, %0\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 1:i32, %0\ninfer %1\n",
+        [
+            "%2:i32 = sub %0, 4294967295:i32\nresult %2\n"
+        ]
+    ]
+]

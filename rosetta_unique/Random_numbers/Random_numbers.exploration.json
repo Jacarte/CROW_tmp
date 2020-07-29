@@ -1,0 +1,35 @@
+[
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,1000))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        [
+            "%2:i32 = sub %0, 4294967295:i32\nresult %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,1000))\ninfer %0\n",
+        [
+            "%4:i32 = and %0, %0\nresult %4\n",
+            "%1:i32 = and 1023:i32, %0\nresult %1\n",
+            "%3:i32 = or %0, %0\nresult %3\n",
+            "%5:i32 = urem %0, 2147483392:i32\nresult %5\n",
+            "%6:i32 = srem %0, 2415919070:i32\nresult %6\n",
+            "%2:i32 = freeze %0\nresult %2\n",
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        [
+            "%3:i32 = or %0, %0\nresult %3\n",
+            "%2:i32 = and %0, %0\nresult %2\n",
+            "%1:i32 = freeze %0\nresult %1\n",
+            "result %0\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (range=[0,1000))\n%1:i32 = addnw 1:i32, %0 (hasExternalUses)\n%2:i1 = eq 1000:i32, %1\ninfer %2\n",
+        [
+            "%3:i1 = eq 999:i32, %0\nresult %3\n"
+        ]
+    ]
+]

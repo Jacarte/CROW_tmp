@@ -1,0 +1,4 @@
+2020.07.19 20:36:06 INFO  started: Metals version 0.9.2 in workspace '/Users/javierca/Documents/traces/al_unique/Base64_decode_data' for client vscode.
+2020.07.19 20:36:07 INFO  time: initialize in 1.75s
+2020.07.19 20:36:10 WARN  no build tool detected in workspace '/Users/javierca/Documents/traces/al_unique/Base64_decode_data'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.07.21 08:31:13 INFO  shutting down Metals

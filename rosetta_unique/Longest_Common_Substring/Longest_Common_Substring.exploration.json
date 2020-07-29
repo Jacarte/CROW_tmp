@@ -1,0 +1,85 @@
+[
+    [
+        "%0:i8 = var\n%1:i1 = eq 0:i8, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var (range=[1,0))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i8 = var (range=[1,0))\n%1:i8 = var\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\ninfer %3\n",
+        [
+            "result %2\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\n%1:i1 = ne 0:i8, %0\n%2:i1 = freeze %1\ninfer %2\n",
+        [
+            "result %1\n"
+        ]
+    ],
+    [
+        "%0:i8 = var\n%1:i1 = ne 0:i8, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = add 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i8 = var\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,-2147483648))\n%2:i32 = add %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var (range=[1,0))\n%1:i8 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,-2147483648))\ninfer %0\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i32 = sub %0, %1\n%3:i32 = var\n%4:i1 = slt %2, %3\ninfer %4\n",
+        []
+    ],
+    [
+        "%0:i8 = var (range=[1,0))\n%1:i8 = var\n%2:i1 = eq %0, %1\n%3:i1 = freeze %2\n%4:i1 = ne 0:i8, %1\n%5:i1 = freeze %4\n%6:i1 = and %3, %5\ninfer %6\n",
+        [
+            "result %3\n",
+            "result %2\n"
+        ]
+    ],
+    [
+        "%0:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,-2147483648))\n%1:i32 = addnw 1:i32, %0\ninfer %1\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var (knownBits=0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx) (nonNegative) (nonZero) (range=[1,-2147483648))\n%2:i32 = addnw 1:i32, %1 (hasExternalUses)\n%3:i32 = add %0, %2\ninfer %3\n",
+        []
+    ],
+    [
+        "%0:i32 = var (nonZero)\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i1 = eq %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i32 = var\n%1:i32 = var\n%2:i32 = sub %0, %1\ninfer %2\n",
+        []
+    ],
+    [
+        "%0:i8 = var\n%1:i32 = sext %0\ninfer %1\n",
+        []
+    ]
+]

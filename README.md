@@ -1,0 +1,76 @@
+
+
+## Prerequisites
+
+- Python version 3.7
+
+- Download our changed version of Souper. The main reason behind is that we include some extra options to be able of working together with the SLUMPs core. After downloading all the submodules in SLUMPs, build every one of them following the respective instructions in the original repos.
+
+    Inside the `souper` folder:
+
+    ```bash
+    ./build_deps.sh
+    mkdir build
+    cd build
+    cmake  ../
+    make
+    ```
+
+- Build wabt toolkit to provide the WASM to WAT conversion for debugging reasons.
+
+    Follow this instructions inside the `wabt` folder:
+
+    ```bash
+    git submodule update --init
+    mkdir build
+    cd build
+    cmake ..
+    cmake --build .
+    ```
+
+- Install the python requirements: `pip3 install -r src/requirements.txt`
+
+## How to use it
+
+Run `python3  crow/crow/crow.py <file.c>` or run it directly on LLVM IR (the 'wasm32-unknown-unknown' target needs to be used during compilation) `python3 crow/crow/crow.py <file.bc>`
+
+### Slumps dockerized app
+
+Bothg images are avaiable in the docker [Hub](https://hub.docker.com/repository/docker/jacarte/slumps)
+
+The application can be ported to a docker container too. To execute SLUMPs, enter in the src file and build the docker image. Run the following command to start the application ```docker run --rm -v $(pwd):/inputs   -v $(pwd)/crow_out:/slumps/crow/out  -v $(pwd)/logs:/slumps/crow/logs  --entrypoint /bin/bash jacarte/slumps:crow ./start_poly_bench.sh   <config options>  /inputs/<program> ```. Slumps will process the fetched code from the arguments, exporting the results to the out folder volumen. You can specify the config parameters, specify the values of ```<config-options>``` as ```%<namespace>.key <value>```. For example, to change the timeout per program use ```<docker_run> %DEFAULT.timeout 3600 <program>```, this example changes the timeout to 3600 seconds. The other available options and possible values are listed below.
+
+
+|Namespace|Key|Default value|Comments|
+|--|--|--|--|
+DEFAULT | slumpspath | /slumps | |
+| | debugfile | /slumps/src/slumps.debug.txt | |
+| | outfolder | /slumps/src/out | |
+| | print-sha | True | |
+| | prune-equal | True | |
+| | exit-on-find | False | |
+| | generator-method | subset | ```all``` to superoptimize :) |
+| | candidates-threshold | 1 | |
+| | fail-silently | True | |
+| | timeout | 3600 | |
+| | exploration-timeout | 1800 | |
+| | link-wasi | False | Add WASI std lib to create WASM binaries |
+clang | command | -S -O3 --target=wasm32-unknown-unknown -emit-llvm  | You can append extra includess |
+wasm-ld | command | --no-entry --export-all --allow-undefined -o %s | |
+wabt | path | /slumps/wabt/bin | |
+| | wasm2wat | /slumps/wabt/bin/wasm2wat | |
+souper | solver | -z3-path=/slumps/souper/third_party/z3/build/z3 | |
+| | passname | libsouperPass.so | |
+| | souper-debug-level | 2 | |
+| | souper-common | -solver-timeout=1800 | |
+
+## Souper new features
+
+We added some features/options to Souper:
+
+- **`souper-subset`**: Based on the candidate indexes, specify the candidates to be applied, for example
+`-souper-subset=1,2,3,4` or `-souper-subset=0,3`
+- **`souper-valid-count`**: Search for successful optimizations without replacing
+- **`souper-redis-host`**: Host for redis
+- **`souper-redis-pass`**: Password for redis connection
+
