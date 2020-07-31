@@ -7,3 +7,6 @@
 [submodule "wabt"]
 	path = wabt
 	url = https://github.com/WebAssembly/wabt
+[submodule "STRAC"]
+	path = STRAC
+	url = https://github.com/KTH/STRAC
