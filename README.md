@@ -55,7 +55,7 @@ DEFAULT | slumpspath | /slumps | |
 | | timeout | 3600 | |
 | | exploration-timeout | 1800 | |
 | | link-wasi | False | Add WASI std lib to create WASM binaries |
-clang | command | -S -O3 --target=wasm32-unknown-unknown -emit-llvm  | You can append extra includess |
+clang | command | -S -O3 --target=wasm32-unknown-unknown -emit-llvm  | You can add extra includes |
 wasm-ld | command | --no-entry --export-all --allow-undefined -o %s | |
 wabt | path | /slumps/wabt/bin | |
 | | wasm2wat | /slumps/wabt/bin/wasm2wat | |
