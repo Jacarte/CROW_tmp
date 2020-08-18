@@ -10,3 +10,7 @@
 [submodule "STRAC"]
 	path = STRAC
 	url = https://github.com/KTH/STRAC
+[submodule "llvm"]
+	path = llvm
+	url = https://github.com/Jacarte/llvm-project.git
+	branch = master
